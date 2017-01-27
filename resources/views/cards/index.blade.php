@@ -24,7 +24,7 @@
 <hr />
 
 <div class="container">
-  <h3>Add a New Card</h3>
+  <h3>Add a New Book</h3>
   <form action="/cards" method="POST">
     {{ csrf_field() }}
     <div class="form-group">
@@ -52,7 +52,7 @@
 <div class="container">
     <ul class="list-group">
       @unless (empty($cardsb))
-        <label class="label-warning">Some other cards to display</label>
+        <label class="label-warning">Some other books to display</label>
       @endunless
 
       @foreach ($cardsb as $key => $value)
