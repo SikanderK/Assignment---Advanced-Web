@@ -11,10 +11,10 @@
 
       <div class="content">
           <div class="title m-b-md">
-              Laravel Home Page
+              The Book Catalogue
           </div>
           <div class="container">
-            <a href="index" class="title">Display Cards</a>
+            <a href="index" class="title">Display Books</a>
           </div>
           <div class="container">
             <a href="about" class="title small">About Page</a>

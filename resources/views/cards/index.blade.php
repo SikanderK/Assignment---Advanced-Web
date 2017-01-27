@@ -2,14 +2,14 @@
 
 @section('content')
 
-<h1 class="">Display Cards</h1>
+<h1 class="">Display Books</h1>
 <a href="/"><h4>Back to Home</h4></a>
 <div class="container">
     <ul class="list-group">
       @if (empty($cards))
-        <label class="label-warning">No cards to display.</label>
+        <label class="label-warning">No Books to display.</label>
       @else
-        <label class="label-warning">Some cards to display</label>
+        <label class="label-warning">Some Books to display</label>
       @endif
 
       @foreach ($cards as $card)
