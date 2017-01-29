@@ -19,15 +19,15 @@ Route::get('about', function () {
     return view('about'); // will return about.blade.php
 });
 
-Route::get('index', 'CardsController@index');
+Route::get('index', 'BookController@index');
 
-Route::post('cards', 'CardsController@create');
+Route::post('books', 'BookController@create');
 
-Route::get('cards/{card}', 'CardsController@show');
+Route::get('books/{book}', 'BookController@show');
 
-Route::post('cards/{card}/notes', 'NotesController@store');
+Route::post('books/{book}/notes', 'NotesController@store');
 
-Route::get('cards/{card}/delete', 'CardsController@delete');
+Route::get('books/{book}/delete', 'BookController@delete');
 
 Route::get('notes/{note}/edit', 'NotesController@edit');
 
