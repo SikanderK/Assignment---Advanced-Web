@@ -9,9 +9,9 @@ class Note extends Model
     //
     protected $fillable = ['body'];
 
-    public function card()
+    public function book()
     {
-      return $this->belongsTo(Card::class);
+      return $this->belongsTo(Book::class);
     }
 
     public function user()
