@@ -43,7 +43,7 @@
           <textarea name="author" class="form-control"></textarea>
       </div>
     <div class="form-group">
-      <button type="submit" class="btn btn-primary">Add Card</button>
+      <button type="submit" class="btn btn-primary">Add Book</button>
     </div>
   </form>
 
