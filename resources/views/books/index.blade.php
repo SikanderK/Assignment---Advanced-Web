@@ -15,11 +15,15 @@
         <tr>
         <th>Title</th>
         <th>Author</th>
+        <th>Year</th>
+          <th>Pages</th>
             </tr>
       @foreach ($books as $book)
           <tr>
          <td style="padding-bottom: 1em; "><a href="/books/{{ $book->id }}">{{$book->title}}</a></td>
             <td style="padding-bottom: 1em; ">{{$book->author}}</td>
+            <td style="padding-bottom: 1em; ">{{$book->year}}</td>
+            <td style="padding-bottom: 1em; ">{{$book->pages}}</td>
           <td style="padding-bottom: 1em; "><a href="/books/{{ $book->id }}/delete" class="pull-right">delete</a></td>
           </tr>
       @endforeach
@@ -41,6 +45,14 @@
       <div class="form-group">
           <h4>Author : </h4>
           <textarea name="author" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+          <h4>Year : </h4>
+          <textarea name="year" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+          <h4>Pages : </h4>
+          <textarea name="pages" class="form-control"></textarea>
       </div>
     <div class="form-group">
       <button type="submit" class="btn btn-primary">Add Book</button>

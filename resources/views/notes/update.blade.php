@@ -4,7 +4,7 @@
 
 
 <div class="row">
-  <h1>Edit the Note</h1>
+  <h1>Edit the Book Note</h1>
   <form action="/notes/{{$note->id}}" method="POST">
     {{ csrf_field() }}
     {{ method_field('patch') }}

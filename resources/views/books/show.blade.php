@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
 
-      <h1> {{$book->title}} by {{$book->author}} </h1>
+      <h1> {{$book->title}} by {{$book->author}} by {{$book->year}} by {{$book->pages}} </h1>
       <ul class="list-group">
         @foreach ($book->notes as $note)
           <li class="list-group-item">

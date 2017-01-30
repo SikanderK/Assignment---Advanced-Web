@@ -9,11 +9,11 @@ class BookController extends Controller
 {
     public function index(){
       $books = Book::all();
-//      $cardsb = ['cardb 1', 'cardb 2', 'cardb 3'];
+
       return view('books.index',compact('books'));
-//          ->with('cardsb', $cardsb);
+
       return view('books.index')->with('books',$books);
-//          ->with(['cardsb' => $cardsb]);
+
     }
 
     public function create(Request $request){
@@ -24,8 +24,10 @@ class BookController extends Controller
       $book = new Book;
       $book->title = $request->title;
         $book->author = $request->author;
+        $book->year = $request->year;
+        $book->pages = $request->pages;
       $book->save();
-        
+
 
       return back();
     }
@@ -39,7 +41,7 @@ class BookController extends Controller
     }
 
     public function delete(Book $book){
-        
+
       foreach ($book->notes as $note) {
         $note->delete();
       }
